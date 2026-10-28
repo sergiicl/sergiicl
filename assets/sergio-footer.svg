@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">
+  <title id="title">Let's build something useful</title>
+  <desc id="desc">Editable dark footer with a violet and cyan gradient line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0b1020"/><stop offset=".55" stop-color="#17152e"/><stop offset="1" stop-color="#08232d"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  </defs>
+  <rect width="1200" height="150" rx="22" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#line)" stroke-width="1.5" opacity=".6"><path d="M0 22H170L196 48H250"/><path d="M1200 124H1020L990 94H940"/><path d="M35 150V125L60 100H95"/><path d="M1165 0V25L1140 50H1100"/></g>
+  <text x="600" y="65" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="29" font-weight="800" fill="#f8fafc">LET'S BUILD SOMETHING USEFUL.</text>
+  <rect x="480" y="82" width="240" height="3" rx="2" fill="url(#line)"/>
+  <text x="600" y="112" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="3" fill="#c4b5fd">CODE · CREATE · ITERATE</text>
+  <rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="#94a3b8" stroke-opacity=".24"/>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sergio Casanova — Software Engineer</title>
+  <desc id="desc">An editable dark navy banner with a violet-to-cyan gradient, grid lines, circuit paths, and a software engineering headline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b16"/>
+      <stop offset="55%" stop-color="#11152b"/>
+      <stop offset="100%" stop-color="#071d2b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="52%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientTransform="translate(215 65) rotate(40) scale(520 340)">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientTransform="translate(1030 270) rotate(-20) scale(380 240)">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#a5b4fc" stroke-opacity=".08" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.5" fill="#a5b4fc" fill-opacity=".18"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rounded"><rect width="1200" height="360" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+    <rect width="1200" height="360" fill="url(#violetGlow)"/>
+    <rect width="1200" height="360" fill="url(#cyanGlow)"/>
+
+    <!-- Background circuit paths: edit/remove these paths to customise the look. -->
+    <g fill="none" stroke="url(#neon)" stroke-width="1.5" stroke-opacity=".52">
+      <path d="M700 0V38H760V72H840"/>
+      <path d="M810 0V24H900V61H1015V98H1200"/>
+      <path d="M780 360V322H850V294H940V258H1030"/>
+      <path d="M1200 205H1135V174H1075V142H1010"/>
+      <path d="M640 300H700V276H760V240H820"/>
+      <path d="M950 360V337H1000V313H1085V284H1200"/>
+    </g>
+    <g fill="#22d3ee" fill-opacity=".95" filter="url(#glow)">
+      <circle cx="840" cy="72" r="3"/><circle cx="1015" cy="98" r="3"/><circle cx="1030" cy="258" r="3"/><circle cx="820" cy="240" r="3"/><circle cx="1085" cy="284" r="3"/>
+    </g>
+    <g fill="none" stroke="#a78bfa" stroke-opacity=".2">
+      <circle cx="1010" cy="176" r="128" stroke-width="1"/>
+      <circle cx="1010" cy="176" r="95" stroke-width="1" stroke-dasharray="4 8"/>
+      <circle cx="1010" cy="176" r="62" stroke-width="1"/>
+    </g>
+
+    <!-- Top label -->
+    <g transform="translate(64 44)">
+      <rect width="224" height="34" rx="17" fill="#161d36" stroke="#6875d9" stroke-opacity=".65"/>
+      <circle cx="18" cy="17" r="4" fill="#9ece6a"/>
+      <text x="32" y="22" fill="#c7d2fe" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.8">BUILDING &amp; LEARNING</text>
+    </g>
+
+    <!-- Main typography -->
+    <text x="62" y="151" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="51" font-weight="800" letter-spacing="-1.6">SERGIO CASANOVA</text>
+    <rect x="64" y="174" width="345" height="4" rx="2" fill="url(#neon)"/>
+    <text x="64" y="216" fill="#c4b5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="600" letter-spacing="2.1">SOFTWARE ENGINEERING</text>
+    <text x="64" y="251" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">Turning ideas into systems you can build, break &amp; play with.</text>
+
+    <!-- Stack chips -->
+    <g transform="translate(64 284)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600">
+      <rect width="88" height="29" rx="8" fill="#181b35" stroke="#8b5cf6" stroke-opacity=".75"/>
+      <text x="44" y="19" text-anchor="middle" fill="#ddd6fe">PYTHON</text>
+      <rect x="98" width="68" height="29" rx="8" fill="#181b35" stroke="#8b5cf6" stroke-opacity=".75"/>
+      <text x="132" y="19" text-anchor="middle" fill="#ddd6fe">LUA</text>
+      <rect x="176" width="120" height="29" rx="8" fill="#102b38" stroke="#22d3ee" stroke-opacity=".65"/>
+      <text x="236" y="19" text-anchor="middle" fill="#a5f3fc">CREATIVE CODE</text>
+    </g>
+
+    <!-- Monogram orb -->
+    <g transform="translate(1010 176)">
+      <circle r="54" fill="#0b1224" stroke="url(#neon)" stroke-width="2.5"/>
+      <circle r="43" fill="none" stroke="#6474d8" stroke-opacity=".55" stroke-dasharray="3 7"/>
+      <text y="12" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="36" font-weight="800" letter-spacing="-2">SC</text>
+      <path d="M-72 -72L-61 -61M72 72L61 61M72 -72L61 -61M-72 72L-61 61" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Small code motif -->
+    <g transform="translate(856 77)" fill="#a5b4fc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" opacity=".78">
+      <text x="0" y="0">&lt;/&gt;</text>
+      <text x="152" y="214" fill="#67e8f9">{ }</text>
+      <text x="-100" y="209" fill="#c4b5fd">01 · 10 · 11</text>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="358" rx="27" fill="none" stroke="#94a3b8" stroke-opacity=".23"/>
+  </g>
+</svg>
